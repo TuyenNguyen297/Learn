@@ -1,0 +1,5 @@
+BlockID,FileLineStart,FileLineEnd,FunctionOrTable,CodeSnippetSummary,RegisterSymbol,RegisterPageIfKnown,BitFieldsOrMask,HardwareBlockAffected,HardwareEffect,Preconditions/Sequencing,Notes
+1,43,145,tlv320aic31xx.c,Initialization of registers for TLV320AIC31XX codec,REG_DEFAULTS,N/A,N/A,TLV320AIC31XX codec,Sets up default register values for initialization,N/A,Initialization of the codec requires correct sequence for registers.
+2,857,961,aic31xx_setup_pll,Register programming to set up the PLL configuration,PLATFORM_PLL,N/A,N/A,TLV320AIC31XX codec,Configures the PLL for the voltage and frequency settings,N/A,Must be done after power-up sequence to ensure correct functionality.
+
+TODO: Add more rows for additional register writes and configurations.
